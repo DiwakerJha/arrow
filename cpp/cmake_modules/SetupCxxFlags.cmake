@@ -74,7 +74,7 @@ elseif(ARROW_CPU_FLAG STREQUAL "ppc")
   check_cxx_compiler_flag(${ARROW_ALTIVEC_FLAG} CXX_SUPPORTS_ALTIVEC)
 elseif(ARROW_CPU_FLAG STREQUAL "armv8")
   # Arm64 compiler flags, gcc/clang only
-  set(ARROW_ARMV8_ARCH_FLAG "-march=${ARROW_ARMV8_ARCH}")
+  set(ARROW_ARMV8_ARCH_FLAG "-march=armv8-a")
   check_cxx_compiler_flag(${ARROW_ARMV8_ARCH_FLAG} CXX_SUPPORTS_ARMV8_ARCH)
 endif()
 
